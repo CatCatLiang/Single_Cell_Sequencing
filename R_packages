@@ -1,0 +1,47 @@
+#download R packages
+#library(Seurat) 
+#library(plyr)
+#library(dplyr)
+#library(Matrix)
+#library(pheatmap)
+#library(devtools)
+#library(plotly)
+#library(reshape2)
+#library(MAST)
+#library(scran)
+#library(sctransform)
+#library(SeuratWrappers)
+#library(patchwork)
+#library("SeuratDisk")
+
+#written by Mr. Liang
+
+install.packages("Seurat")
+install.packages("dplyr")
+install.packages("plyr")
+install.packages("Matrix")
+install.packages("pheatmap")
+install.packages("devtools")
+install.packages("reshape2")
+
+# MAST package is not in CRAN, in Biomanager
+#Solution one
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("MAST")
+
+#Solution two
+install.packages("BiocManager")
+library(BiocManager)
+BiocManager::install("MAST")
+
+# scran package is not in CRAN, in Biomanager
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("scran")
+
+install.packages("sctransform")
+
+
