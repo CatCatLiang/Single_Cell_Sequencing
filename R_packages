@@ -44,4 +44,26 @@ BiocManager::install("scran")
 
 install.packages("sctransform")
 
+#install SeuratWrappers, downloaded from Github
+##install R.utils in CRAN first
 
+install.packages("R.utilis")
+
+#use GitHub token to remove API rate limit
+##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
+
+usethis::edit_r_environ()
+
+#type GitHub token in prompt window
+GitHub_TOKEN="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"
+
+#re-start R
+##use remotes::install_github('') to download SeuratWrappers
+
+remotes::install_github('satijalab/seurat-wrappers')
+
+#library patchwork
+install.packages("patchwork")
+
+#library SeuratDisk
+install.packages("SeuratDisk")
