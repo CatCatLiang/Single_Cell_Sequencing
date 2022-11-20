@@ -67,3 +67,6 @@ install.packages("patchwork")
 
 #library SeuratDisk
 install.packages("SeuratDisk")
+
+#a new github pat
+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 
